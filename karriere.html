@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karriere – Jakob Schumacher OHG</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Dateien von Markus/Logo/logo HD.jpeg">
+</head>
+<body>
+  <div id="navbar-container"></div>
+
+  <section class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+    <div>
+      <h1 class="display-4 fw-bold">Karriere bei Jakob Schumacher OHG</h1>
+      <p class="lead">Tradition trifft Zukunft – seit 1902. Werde DU Teil unseres Teams.</p>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="Dateien von Markus/Logo/logo HD.jpeg" alt="Baustelle" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2>WIR SUCHEN DICH!</h2>
+        <p class="fs-5">
+          Du willst mit anpacken und suchst einen sicheren Job auf regionalen Baustellen? Dann komm zu uns!
+        </p>
+        <ul class="fs-5">
+          <li><strong>🪓 Vorarbeiter (m/w/d)</strong> im Hoch- und Tiefbau</li>
+          <li><strong>🪧 Maurer (m/w/d)</strong></li>
+          <li><strong>💪 Bauhelfer (m/w/d)</strong></li>
+        </ul>
+        <p class="fs-5">
+          🎓 Du willst wissen, wie’s auf der Baustelle abläuft?<br>
+          Mach dein <strong>Praktikum (m/w/d)</strong> bei uns und lerne den Beruf des Maurers hautnah kennen!
+        </p>
+        <p class="fs-5 mt-3">
+          Bewerbungen per Mail oder telefonisch an: <br>
+          <a href="mailto:jakobschumacher@t-online.de">jakobschumacher@t-online.de</a><br>
+          <strong>📞</strong> 06251 / 52413
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Warum zu uns?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>🌿 Regional & Familiengeführt</h5>
+          <p>Ein starkes Team mit langer Tradition und kurzen Wegen.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>💼 Faire Bedingungen</h5>
+          <p>Feste Arbeitszeiten, faire Entlohnung und Wertschätzung im Alltag.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>👨‍🎓 Ausbildung & Praktikum</h5>
+          <p>Lerne den Beruf direkt vor Ort kennen – praxisnah und bodenständig.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Jetzt bewerben!</h2>
+      <p class="fs-5">Schreib uns einfach per E-Mail, ruf an oder komm persönlich vorbei. Wir freuen uns auf dich!</p>
+      <a href="mailto:jakobschumacher@t-online.de" class="btn btn-custom-red">Jetzt bewerben</a>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar-container").innerHTML = data);
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-container").innerHTML = data);
+  </script>
+</body>
+</html>

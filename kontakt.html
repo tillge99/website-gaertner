@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakt – Jakob Schumacher OHG</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Dateien von Markus/Logo/logo HD.jpeg" />
+</head>
+<body>
+  <div id="navbar-container"></div>
+
+  <section class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+    <div>
+      <h1 class="display-4 fw-bold">Kontakt</h1>
+      <p class="lead">Wir freuen uns auf Ihre Anfrage – telefonisch, per E-Mail oder über das Formular.</p>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h2>So erreichen Sie uns</h2>
+        <p class="fs-5">
+          Jakob Schumacher OHG<br />
+          Werner-von-Siemens-Str. 10<br />
+          64683 Einhausen<br /><br />
+          <strong>Telefon:</strong> 06251 / 52413<br />
+          <strong>E-Mail:</strong> <a href="mailto:jakobschumacher@t-online.de"> jakobschumacher@t-online.de </a>
+        </p>
+        <p class="fs-5">Gerne vereinbaren wir mit Ihnen ein unverbindliches Erstgespräch!</p>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Kontaktformular</h2>
+        <form action="https://formsubmit.co/jakobschumacher@t-online.de" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://deine-domain.de/danke.html">
+          
+            <div class="mb-3">
+              <label for="name" class="form-label">Name*</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+          
+            <div class="mb-3">
+              <label for="email" class="form-label">E-Mail*</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+          
+            <div class="mb-3">
+              <label for="nachricht" class="form-label">Nachricht*</label>
+              <textarea class="form-control" id="nachricht" name="message" rows="5" required></textarea>
+            </div>
+          
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="akzeptiert" id="datenschutz" required>
+              <label class="form-check-label" for="datenschutz">
+                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiere sie.*
+              </label>
+            </div>
+          
+            <button type="submit" class="btn btn-custom-red">Absenden</button>
+            <p class="text-muted mt-2">* Pflichtfelder</p>
+          </form>
+          
+      </div>
+    </div>
+  </section>
+
+  <section class="container pb-5">
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.google.com/maps?q=Werner-von-Siemens-Str.+10,+64683+Einhausen&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar-container").innerHTML = data);
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-container").innerHTML = data);
+  </script>
+</body>
+</html>

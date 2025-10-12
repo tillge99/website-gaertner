@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns – Jakob Schumacher OHG</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Dateien von Markus/Logo/logo HD.jpeg">
+</head>
+<body>
+  <div id="navbar-container"></div>
+
+  <section class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+    <div>
+      <h1 class="display-4 fw-bold">Über uns</h1>
+      <p class="lead">Tradition. Vertrauen. Qualität – seit 1902.</p>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="img/ueber-uns/team_historie.jpg" alt="Historie" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2>Familienbetrieb mit Geschichte</h2>
+        <p class="fs-5">
+         Die Firma <strong>Jakob Schumacher Bau </strong> blickt auf eine über 120-jährige Tradition zurück.
+Gegründet wurde das Bauunternehmen im Jahr 1902 von Josef Schumacher, der als Maurermeister den Grundstein legte.
+In der zweiten Generation führte sein Sohn Jakob Schumacher, ebenfalls Meister seines Handwerks, den Betrieb erfolgreich weiter. <br>
+
+Mit der dritten Generation trat Jakob Gärtner, Schwiegersohn von Jakob Schumacher und Maurermeister, in die Geschäftsführung ein und entwickelte das Unternehmen kontinuierlich weiter.
+Anschließend übernahm sein Sohn Bernhard Gärtner als vierte Generation – ebenfalls mit Meisterbrief – die Leitung. <br>
+
+Heute steht mit Markus Gärtner, Maurer- und Betonbaumeister, bereits die fünfte Generation in den Startlöchern – bereit, die Familientradition mit Erfahrung, Leidenschaft und höchster Fachkompetenz in die Zukunft zu tragen.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Unsere Werte</h2>
+          <p class="fs-5">
+            Bei all unseren Projekten stehen <strong>Qualität</strong>, <strong>Zuverlässigkeit</strong> und <strong>persönliche Betreuung</strong> im Mittelpunkt. Wir setzen auf langfristige Partnerschaften mit Kunden, Lieferanten und Mitarbeitenden.
+          </p>
+          <p class="fs-5">
+            Dabei pflegen wir eine direkte Kommunikation, ehrliche Beratung und hohe Transparenz – sowohl in der Planung als auch in der Ausführung.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/Schriftzug.jpg" alt="Werte" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="img/ueber-uns/Historie.jpg" alt="Teamarbeit" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h2>Unser Team</h2>
+          <p class="fs-5">
+            Unsere Mitarbeiterinnen und Mitarbeiter sind das Fundament unseres Erfolgs. Mit langjähriger Erfahrung, Fachkompetenz und Engagement sorgen sie dafür, dass Ihre Bauprojekte termintreu und in bester Qualität realisiert werden.
+          </p>
+          <p class="fs-5">
+            Von der Bauleitung bis zum Handwerker auf der Baustelle: Wir arbeiten Hand in Hand und mit Herzblut.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Unsere Region</h2>
+          <p class="fs-5">
+            Wir sind in Einhausen zuhause – und fest mit der Region verbunden. Die meisten unserer Bauprojekte realisieren wir in der Umgebung von Bensheim, Lorsch, Heppenheim, Lampertheim und Darmstadt.
+          </p>
+          <p class="fs-5">
+            Als lokales Unternehmen sind wir stolz darauf, einen Beitrag zur Entwicklung unserer Heimat zu leisten.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/ueber-uns/Firma_frueher.jpg" alt="Region Einhausen" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar-container").innerHTML = data);
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-container").innerHTML = data);
+  </script>
+</body>
+</html>
