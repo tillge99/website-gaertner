@@ -159,7 +159,7 @@ footer ul {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
   .kontakt-cta {
-    background: url('Dateien von Markus/Logo/Schumacher_Auto.jpg') no-repeat;
+    background: url('img/Logo/Schumacher_Auto.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 70%; /* X = 50% (horizontal), Y = 30% (vertikal) */
