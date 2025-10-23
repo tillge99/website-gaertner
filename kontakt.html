@@ -34,6 +34,9 @@
 
       <div class="col-md-6">
         <h2>Kontaktformular</h2>
+        <div id="success-banner" class="alert alert-success text-center d-none" role="alert">
+  Danke! Ihre Nachricht wurde erfolgreich versendet.
+</div>
         <form action="https://formsubmit.co/jakobschumacher@t-online.de" method="POST">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://jakobschumacher-bau.de/kontakt">
@@ -86,5 +89,17 @@
       .then(res => res.text())
       .then(data => document.getElementById("footer-container").innerHTML = data);
   </script>
+  <script>
+  function showSuccessBanner() {
+    setTimeout(() => {
+      const banner = document.getElementById("success-banner");
+      banner.classList.remove("d-none");
+      setTimeout(() => {
+        banner.classList.add("d-none");
+      }, 5000);
+    }, 1000); 
+  }
+</script>
+
 </body>
 </html>
