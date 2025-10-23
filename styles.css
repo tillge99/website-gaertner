@@ -111,6 +111,9 @@ footer ul {
     .navbar {
       position: relative;
     }
+      .kontakt-cta, .hero-section {
+    background-attachment: scroll;
+  }
   }
   @media (min-width: 992px) {
     .navbar .dropdown:hover .dropdown-menu {
